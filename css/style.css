@@ -1,3 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", "Helvetica", sans-serif;
+}
 
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+#general-content {
+  height: 100%;
+  background-image: url(../img/bg.png);
+}
+
+.navbar {
+  background-color: #30B8B2;
+}
+.navbar div .navbar-brand {
+  font-size: 2em;
+  background-color: #121212;
+  color: #FF7A4F;
+  height: 2em;
+}
+.navbar div .nav {
+  margin: -0.6em;
+}
+.navbar div .nav-link,
+.navbar div .social-network a {
+  color: #004B63;
+  font-size: 1.2em;
+}
+.navbar div .nav-link:hover,
+.navbar div .social-network a:hover {
+  color: #121212;
+}
+.navbar div .social-network a {
+  font-size: 1.2em;
+  display: block;
+}
 
 /*# sourceMappingURL=style.css.map */
