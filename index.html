@@ -22,7 +22,7 @@
         <div id="general-content">
             
             <!-- main menu -->
-            <nav class="navbar d-inline-block h-100 text-center p-0">
+            <nav class="navbar d-inline-block h-100 text-center p-0 fixed-top">
                 
                 <!-- flexbox -->
                 <div class="d-flex flex-wrap justify-content-center h-100">
@@ -30,10 +30,10 @@
 
                     <!-- navbar menu -->
                     <ul class="nav flex-column align-self-center">
-                        <li class="nav-item"><a href="#" title="home" class="nav-link"><i class="fa fa-home"></i></a></li>
-                        <li class="nav-item"><a href="#" title="About me" class="nav-link"><i class="fas fa-book-reader"></i></a></li>
-                        <li class="nav-item"><a href="#" title="My work" class="nav-link"><i class="fa fa-code"></i></a></li>
-                        <li class="nav-item"><a href="#" title="Contact" class="nav-link"><i class="fa fa-envelope"></i></a></li>
+                        <li class="nav-item"><a href="#section-home" title="home" class="nav-link"><i class="fa fa-home"></i></a></li>
+                        <li class="nav-item"><a href="#section-about" title="About me" class="nav-link"><i class="fas fa-book-reader"></i></a></li>
+                        <li class="nav-item"><a href="#section-work" title="My work" class="nav-link"><i class="fa fa-code"></i></a></li>
+                        <li class="nav-item"><a href="#section-contact" title="Contact" class="nav-link"><i class="fa fa-envelope"></i></a></li>
                     </ul>
                     <!-- // navbar menu -->
 
@@ -51,22 +51,21 @@
 
             <!-- main content -->
             <main class="w-100">
-
                 <!-- home -->
                 <section id="section-home" class="d-flex h-100">
                     
                     <!-- left side content -->
                     <div class="left-side">
                         <article>
-                            <h2>Welcome to my website.</h2>
+                            <h2 data-aos="zoom-in-right">Welcome to my website.</h2>
                             
-                            <p>Recently my passion is creating websites. I'm very curious and constantly searching for new things to learn.</p>
+                            <p data-aos="zoom-in-left">Recently my passion is creating websites. I'm very curious and constantly searching for new things to learn.</p>
                         
                             <!-- buttons box -->
-                            <div class="btn-nav">
-                                <a href="#" class="btn btn-outline-danger ml-0">Who I'am?</a>
-                                <a href="#" class="btn btn-outline-danger">Projects</a>
-                                <a href="#" class="btn btn-outline-danger">Contact</a>
+                            <div class="btn-nav" data-aos="zoom-in-right">
+                                <a href="#section-about" class="btn btn-outline-danger ml-0">Who I'am?</a>
+                                <a href="#section-work" class="btn btn-outline-danger">Projects</a>
+                                <a href="#section-contact" class="btn btn-outline-danger">Contact</a>
                             </div>
                             <!-- // buttons box -->
                         </article>

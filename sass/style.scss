@@ -10,6 +10,24 @@ $color3: #30B8B2;
 $color4: #FF7A4F;
 $color5: #E8E8E6;
 
+// writing animation
+$font-size: 40px;
+$letter-spacing: 0.0625em; //This counts for 1px on 16px font;
+$letter-count: 20; //Number of letters in text !important
+$transition-time: 3s; //Typing speed
+
+$letter-size: calc(1ch + #{$letter-spacing});
+$cursor-width: 1px; //Change this to $letter-size if you want Insert:active effect
+//--
+$cursor-blink-duration: $letter-count;
+$font-width: calc(#{$letter-count}ch + #{$letter-count}*#{$letter-spacing});
+
+*, *:after, *:before {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
 // background image
 $bg: url(../img/bg.png);
 
@@ -21,12 +39,14 @@ html, body { width: 100%; height: 100%; }
 #general-content {
     height: 100%;
     background-image: $bg;
+    background-attachment: fixed;
     display: flex;
 }
 
 // navbar content
 .navbar {
     background-color: $color3;
+    width: 70px;
 
     div {
         // brand
@@ -62,75 +82,126 @@ html, body { width: 100%; height: 100%; }
 }
 
 // main content
-#section-home {
-    .left-side {
-        background-color: $color1-opaque;
-        width: 65%;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
+.left-side {
+    background-color: $color1-opaque;
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 70px;
 
-        article {
-            margin: auto;
-            margin: 10%;
+    article {
+        margin: auto;
+        margin: 10%;
 
-            h2 {
-                color: $color5;
-            }
+        // writing animation
+        h2 {
+            color: $color5;
 
-            p {
-                color: $color4;
-                font-size: 1.2em;
-            }
-
-            .btn-nav {
-                a {
-                    color: $color3;
-                    border: 2px solid $color3;
-                    margin: auto .5em;
+            position: relative;
+            color: $color5;
+            text-align: center;
+            white-space: nowrap;
+            letter-spacing: $letter-spacing;
+            width: $font-width;
+            
+            &:after {
+                display: block;
+                position: absolute;
+                content: '';
+                width: $font-width;
+                height: 2ex;
+                left: 0;
+                top: 0;
+                background: $color1;
+                animation: .6s blink $cursor-blink-duration, move $transition-time 1.5s forwards steps(1);
+                border-left: $cursor-width solid $color5;
+                box-shadow: 0px 1ex 0px 0px $color1;
+        
+                @keyframes move {
+                    @for $i from 1 through $letter-count {
+                        $temp: 100/$letter-count;
+                        $percent: $i*$temp;
+                        #{$percent}% {
+                            width: calc(#{$font-width} - (#{$i}ch + #{$i}*#{$letter-spacing}));
+                            left: calc(#{$i}ch + #{$i}*#{$letter-spacing});
+                        }
+                    }
                 }
-
-                a:hover {
-                    background-color: $color3;
-                    color: $color5;
+            
+                @keyframes blink {
+                    0% {
+                        border-left-color: $color5;
+                    }
+                    50% {
+                        border-left-color: $color5;
+                    }
+                    51% {
+                        border-left-color: $color1;
+                    }
+                    100% {
+                        border-left-color: $color1;
+                    }
                 }
             }
         }
+
+        p {
+            color: $color4;
+            font-size: 1.2em;
+        }
+
+        .btn-nav {
+            a {
+                color: $color3;
+                border: 2px solid $color3;
+                margin: auto .5em;
+            }
+
+            a:hover {
+                background-color: $color3;
+                color: $color5;
+            }
+        }
     }
+}
 
-    .right-side {
-        background-color: $color2;
-        width: 35%;
-        text-align: center;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        color: $color5;
+.right-side {
+    background-color: $color2;
+    width: 35%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: $color5;
 
-        // content right side
-        div {
-            img {
-                width: 60%;
-                margin-bottom: 1em;
+    // content right side
+    div {
+        img {
+            width: 60%;
+            margin-bottom: 1em;
+        }
+
+        article {
+            .my-name {
+                font-size: 1.3em;
             }
 
-            article {
-                .my-name {
-                    font-size: 1.3em;
-                }
-
-                p {
-                    margin: .3em;
-                }
+            p {
+                margin: .3em;
             }
-    
-            .social-network {
-                a {
-                    color: $color4;
-                    display: inline-block;
-                    margin: .5em;
-                }
+        }
+
+        .social-network {
+            a {
+                color: $color4;
+                display: inline-block;
+                margin: .5em;
+            }
+
+            a:hover {
+                color: $color3;
             }
         }
     }
