@@ -17,8 +17,7 @@ $letter-count: 20; //Number of letters in text !important
 $transition-time: 3s; //Typing speed
 
 $letter-size: calc(1ch + #{$letter-spacing});
-$cursor-width: 1px; //Change this to $letter-size if you want Insert:active effect
-//--
+$cursor-width: 1px;
 $cursor-blink-duration: $letter-count;
 $font-width: calc(#{$letter-count}ch + #{$letter-count}*#{$letter-spacing});
 
@@ -158,11 +157,13 @@ body {
             }
         }
 
+        // subtitle home
         p {
             color: $color4;
             font-size: 1.2em;
         }
 
+        // buttons from home
         .btn-nav {
             a {
                 color: $color3;
@@ -236,6 +237,7 @@ body {
             }
         }
 
+        // social network from home
         .social-network {
             a {
                 color: $color4;
