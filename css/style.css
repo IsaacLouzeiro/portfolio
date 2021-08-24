@@ -12,6 +12,7 @@ html, body {
 #general-content {
   height: 100%;
   background-image: url(../img/bg.png);
+  display: flex;
 }
 
 .navbar {
@@ -38,6 +39,59 @@ html, body {
 .navbar div .social-network a {
   font-size: 1.2em;
   display: block;
+}
+
+#section-home .left-side {
+  background-color: #004a63f6;
+  width: 65%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+#section-home .left-side article {
+  margin: auto;
+  margin: 10%;
+}
+#section-home .left-side article h2 {
+  color: #E8E8E6;
+}
+#section-home .left-side article p {
+  color: #FF7A4F;
+  font-size: 1.2em;
+}
+#section-home .left-side article .btn-nav a {
+  color: #30B8B2;
+  border: 2px solid #30B8B2;
+  margin: auto 0.5em;
+}
+#section-home .left-side article .btn-nav a:hover {
+  background-color: #30B8B2;
+  color: #E8E8E6;
+}
+#section-home .right-side {
+  background-color: #121212;
+  width: 35%;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  color: #E8E8E6;
+}
+#section-home .right-side div img {
+  width: 60%;
+  margin-bottom: 1em;
+}
+#section-home .right-side div article .my-name {
+  font-size: 1.3em;
+}
+#section-home .right-side div article p {
+  margin: 0.3em;
+}
+#section-home .right-side div .social-network a {
+  color: #FF7A4F;
+  display: inline-block;
+  margin: 0.5em;
 }
 
 /*# sourceMappingURL=style.css.map */
