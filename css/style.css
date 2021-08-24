@@ -232,7 +232,7 @@ body {
 }
 .right-side div article .skill-content {
   margin: 2em;
-  padding-left: 7%;
+  max-width: 312px;
   text-align: left;
 }
 .right-side div article .skill-content span {
@@ -248,6 +248,90 @@ body {
 }
 .right-side div .social-network a:hover {
   color: #30B8B2;
+}
+
+.work-content {
+  width: 100%;
+  min-height: 100%;
+  margin-left: 70px;
+  background-color: #004a63f8;
+  color: #E8E8E6;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.work-content a {
+  transition: all 0.2s;
+}
+.work-content article {
+  align-self: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 96%;
+  margin: auto;
+}
+.work-content article .project {
+  margin: 0.5em 0.3em;
+}
+.work-content article .project .top-block {
+  background-color: #FF7A4F;
+  padding: 0.2em;
+}
+.work-content article .project .top-block .project-img {
+  width: 18em;
+  height: 10em;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.work-content article .project .top-block .project1-img {
+  background-image: url(../img/img1.png);
+}
+.work-content article .project .top-block .project2-img {
+  background-image: url(../img/img2.png);
+}
+.work-content article .project .top-block .project3-img {
+  background-image: url(../img/img3.png);
+}
+.work-content article .project .top-block .project4-img {
+  background-image: url(../img/img4.png);
+}
+.work-content article .project .top-block .project5-img {
+  background-image: url(../img/img5.png);
+}
+.work-content article .project .top-block .project6-img {
+  background-image: url(../img/img6.png);
+}
+.work-content article .project .top-block .project7-img {
+  background-image: url(../img/img7.png);
+}
+.work-content article .project .top-block .project8-img {
+  background-image: url(../img/img8.png);
+}
+.work-content article .project .bottom-block {
+  background-color: #121212;
+  padding: 0.2em 0.6em;
+  display: flex;
+  justify-content: space-between;
+}
+.work-content article .project .bottom-block .about-project {
+  color: #FF7A4F;
+  text-decoration: none;
+}
+.work-content article .project .bottom-block .about-project:hover {
+  color: #30B8B2;
+}
+.work-content .btn-see-more {
+  color: #E8E8E6;
+  background-color: #FF7A4F;
+  padding: 0.3em 0.5em;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+.work-content .btn-see-more:hover {
+  background-color: #30B8B2;
 }
 
 /*# sourceMappingURL=style.css.map */

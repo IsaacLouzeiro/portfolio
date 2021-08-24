@@ -225,7 +225,7 @@ body {
             // skills content
             .skill-content {
                 margin: 2em;
-                padding-left: 7%;
+                max-width: 312px;
                 text-align: left;
                 
                 span {
@@ -249,5 +249,95 @@ body {
                 color: $color3;
             }
         }
+    }
+}
+
+// work content
+.work-content {
+    width: 100%;
+    min-height: 100%;
+    margin-left: 70px;
+    background-color: $color1-opaque;
+    color: $color5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    
+    a {
+        transition: all .2s;
+    }
+
+    article {
+        align-self: flex-start;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 96%;
+        margin: auto;
+
+
+        // content project
+        .project {
+            margin: .5em .3em;
+            
+            // block of top
+            .top-block {
+                background-color: $color4;
+                padding: .2em;
+                
+                .project-img {
+                    width: 18em;
+                    height: 10em;
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
+
+                // adding img projects
+                
+                .project1-img { background-image: url(../img/img1.png); }// 1th project
+                .project2-img { background-image: url(../img/img2.png); }// 2th project
+                .project3-img { background-image: url(../img/img3.png); }// 3th project
+                .project4-img { background-image: url(../img/img4.png); }// 4th project
+                .project5-img { background-image: url(../img/img5.png); }// 5th project
+                .project6-img { background-image: url(../img/img6.png); }// 6th project
+                .project7-img { background-image: url(../img/img7.png); }// 7th project
+                .project8-img { background-image: url(../img/img8.png); }// 8th project
+                
+            }
+
+            // block of bottom
+            .bottom-block {
+                background-color: $color2;
+                padding: .2em .6em;
+                display: flex;
+                justify-content: space-between;
+
+                // button about of project
+                .about-project {
+                    color: $color4;
+                    text-decoration: none;
+                }
+
+                .about-project:hover {
+                    color: $color3;
+                }
+            }
+        }
+    }
+
+    // button see more
+    .btn-see-more {
+        color: $color5;
+        background-color: $color4;
+        padding: .3em .5em;
+        font-size: 1.2em;
+        text-decoration: none;
+    }
+
+    .btn-see-more:hover {
+        background-color: $color3;
     }
 }
