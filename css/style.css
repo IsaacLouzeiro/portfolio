@@ -196,6 +196,13 @@ html, body {
   background-color: #30B8B2;
   color: #E8E8E6;
 }
+.left-side article h3 {
+  color: #FF7A4F;
+}
+.left-side article .about-text {
+  color: #E8E8E6;
+  text-align: justify;
+}
 
 .right-side {
   background-color: #121212;
@@ -216,6 +223,20 @@ html, body {
 }
 .right-side div article p {
   margin: 0.3em;
+}
+.right-side div article h3 {
+  color: #E8E8E6;
+}
+.right-side div article .skill-content {
+  margin: 2em;
+  padding-left: 7%;
+  text-align: left;
+}
+.right-side div article .skill-content span {
+  display: inline-block;
+  background-color: #FF7A4F;
+  padding: 5px 10px;
+  margin: 0.5em;
 }
 .right-side div .social-network a {
   color: #FF7A4F;
