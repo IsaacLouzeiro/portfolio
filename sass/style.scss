@@ -61,11 +61,19 @@ html, body { width: 100%; height: 100%; }
             margin: -.6em;
         }
 
+        // changing colors on active link
+        .nav-pills {
+            .active {
+                color: $color2;
+                background-color: $color3;
+            }
+        }
+
         // menu nav link, social network link
         .nav-link, 
         .social-network a {
             color: $color1;
-            font-size: 1.2em;
+            font-size: 1.5em;
         }
         
         .nav-link:hover, 

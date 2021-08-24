@@ -35,10 +35,14 @@ html, body {
 .navbar div .nav {
   margin: -0.6em;
 }
+.navbar div .nav-pills .active {
+  color: #121212;
+  background-color: #30B8B2;
+}
 .navbar div .nav-link,
 .navbar div .social-network a {
   color: #004B63;
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 .navbar div .nav-link:hover,
 .navbar div .social-network a:hover {
