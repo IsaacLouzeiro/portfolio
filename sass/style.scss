@@ -68,7 +68,7 @@ body {
         .nav-pills {
             .active {
                 color: $color2;
-                background-color: $color3;
+                background-color: $color5;
             }
         }
 
@@ -76,7 +76,7 @@ body {
         .nav-link, 
         .social-network a {
             color: $color1;
-            font-size: 1.5em;
+            font-size: 1.2em;
         }
         
         .nav-link:hover, 
@@ -85,7 +85,7 @@ body {
         }
 
         .social-network a {
-            font-size: 1.5em;
+            font-size: 1.2em;
             display: block;
         }
 
