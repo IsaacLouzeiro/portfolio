@@ -1,0 +1,23 @@
+@media (max-width: 768px) {
+  #section-home,
+#section-about,
+#section-contact {
+    flex-wrap: wrap;
+  }
+
+  .left-side,
+.right-side {
+    width: 100% !important;
+  }
+
+  .left-side article .btn-nav {
+    display: none;
+  }
+
+  .right-side {
+    margin-left: 70px;
+    padding: 1.1em;
+  }
+}
+
+/*# sourceMappingURL=responsive.css.map */
