@@ -5,6 +5,13 @@
     flex-wrap: wrap;
   }
 
+  #section-contact .left-side {
+    background-color: #121212;
+  }
+  #section-contact .right-side {
+    background-color: #004a63f8;
+  }
+
   .left-side,
 .right-side {
     width: 100% !important;

@@ -1,3 +1,6 @@
+$color1-opaque: #004a63f8;
+$color2: #121212;
+
 // Small devices (576px and down)
 // @media (max-width: 576px) { 
     
@@ -10,6 +13,17 @@
     #section-about,
     #section-contact {
         flex-wrap: wrap;
+    }
+
+    // section contact
+    #section-contact {
+        .left-side {
+            background-color: $color2;
+        }
+
+        .right-side {
+            background-color: $color1-opaque;
+        }
     }
 
     // left and right side content width

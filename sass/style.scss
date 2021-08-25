@@ -200,6 +200,7 @@ body {
         // content contact page
         .contact-me {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-around;
             
             // social network contact
@@ -292,7 +293,7 @@ body {
                 margin-top: 1em;
                 iframe {
                     border-radius: 10px;
-                    max-width: 290px;
+                    max-width: 260px;
                     height: 180px;
                 }
             }

@@ -214,6 +214,7 @@ body {
 }
 .left-side article .contact-me {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 .left-side article .contact-me .sn-contact {
@@ -286,7 +287,7 @@ body {
 }
 .right-side div article .map-content iframe {
   border-radius: 10px;
-  max-width: 290px;
+  max-width: 260px;
   height: 180px;
 }
 .right-side div .social-network a {
