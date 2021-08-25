@@ -15,14 +15,25 @@
   .left-side,
 .right-side {
     width: 100% !important;
+    margin-left: 70px !important;
+    padding: 5%;
   }
 
+  .left-side article {
+    margin: 0% !important;
+  }
   .left-side article .btn-nav {
     display: none;
   }
+  .left-side article h2 {
+    font-size: 1.2em;
+    display: inline-block !important;
+  }
+  .left-side article p {
+    font-size: 1em !important;
+  }
 
   .right-side {
-    margin-left: 70px;
     padding: 1.1em;
   }
 }
