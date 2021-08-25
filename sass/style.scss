@@ -85,7 +85,7 @@ body {
         }
 
         .social-network a {
-            font-size: 1.2em;
+            font-size: 1.5em;
             display: block;
         }
 
@@ -187,6 +187,39 @@ body {
             color: $color5;
             text-align: justify;
         }
+
+        // title from contact page
+        .contact-title {
+            color: $color5;
+        }
+        // subtitle from contact page
+        .contact-subtitle {
+            font-size: 1em;
+        }
+
+        // content contact page
+        .contact-me {
+            display: flex;
+            justify-content: space-around;
+            
+            // social network contact
+            .sn-contact {
+                display: inline-block;
+                text-align: center;
+                text-decoration: none;
+                margin-top: 1em;
+                i {
+                    color: $color3;
+                }
+
+                span {
+                    display: block;
+                    width: 100%;
+                    color: $color5;
+                    margin-top: .8em;
+                }
+            }
+        }
     }
 }
 
@@ -235,6 +268,35 @@ body {
                     margin: .5em;
                 }
             }
+
+            // content from contact page
+            .about-location {
+                display: inline-block;
+                text-align: center;
+                text-decoration: none;
+                margin-top: 1em;
+                i {
+                    color: $color4;
+                }
+
+                span {
+                    display: block;
+                    width: 100%;
+                    color: $color5;
+                    margin-top: .8em;
+                }
+            }
+
+            // map content
+            .map-content {
+                margin-top: 1em;
+                iframe {
+                    border-radius: 10px;
+                    max-width: 290px;
+                    height: 180px;
+                }
+            }
+
         }
 
         // social network from home

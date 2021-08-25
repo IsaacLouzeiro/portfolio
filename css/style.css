@@ -52,7 +52,7 @@ body {
   color: #121212;
 }
 .navbar div .social-network a {
-  font-size: 1.2em;
+  font-size: 1.5em;
   display: block;
 }
 
@@ -206,6 +206,31 @@ body {
   color: #E8E8E6;
   text-align: justify;
 }
+.left-side article .contact-title {
+  color: #E8E8E6;
+}
+.left-side article .contact-subtitle {
+  font-size: 1em;
+}
+.left-side article .contact-me {
+  display: flex;
+  justify-content: space-around;
+}
+.left-side article .contact-me .sn-contact {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 1em;
+}
+.left-side article .contact-me .sn-contact i {
+  color: #30B8B2;
+}
+.left-side article .contact-me .sn-contact span {
+  display: block;
+  width: 100%;
+  color: #E8E8E6;
+  margin-top: 0.8em;
+}
 
 .right-side {
   background-color: #121212;
@@ -240,6 +265,29 @@ body {
   background-color: #FF7A4F;
   padding: 5px 10px;
   margin: 0.5em;
+}
+.right-side div article .about-location {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 1em;
+}
+.right-side div article .about-location i {
+  color: #FF7A4F;
+}
+.right-side div article .about-location span {
+  display: block;
+  width: 100%;
+  color: #E8E8E6;
+  margin-top: 0.8em;
+}
+.right-side div article .map-content {
+  margin-top: 1em;
+}
+.right-side div article .map-content iframe {
+  border-radius: 10px;
+  max-width: 290px;
+  height: 180px;
 }
 .right-side div .social-network a {
   color: #FF7A4F;
