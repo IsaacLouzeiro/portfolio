@@ -57,6 +57,36 @@ $color2: #121212;
     // right side
     .right-side {
         padding: 1.1em;
+
+        // content right side
+        div {
+            article {
+                // content from contact page
+
+                // map content
+                .map-content {
+                    iframe {
+                        width: 100%;
+                    }
+                }
+
+            }
+        }
+    }
+
+    // work content
+    .work-content {
+        article {
+            // content project
+            .project {
+                width: 100%;
+
+                .project-img {
+                    width: 100% !important;
+                }
+
+            }
+        }
     }
 }
 

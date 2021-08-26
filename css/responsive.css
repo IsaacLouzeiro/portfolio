@@ -36,6 +36,16 @@
   .right-side {
     padding: 1.1em;
   }
+  .right-side div article .map-content iframe {
+    width: 100%;
+  }
+
+  .work-content article .project {
+    width: 100%;
+  }
+  .work-content article .project .project-img {
+    width: 100% !important;
+  }
 }
 
 /*# sourceMappingURL=responsive.css.map */
