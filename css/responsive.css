@@ -44,6 +44,13 @@
   .right-side {
     padding: 1.1em;
   }
+  .right-side div article .skill-content {
+    width: 100%;
+    margin: auto !important;
+  }
+  .right-side div article .skill-content span {
+    font-size: 0.9em;
+  }
   .right-side div article .map-content iframe {
     width: 100%;
   }

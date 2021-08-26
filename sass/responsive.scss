@@ -73,6 +73,15 @@ $color2: #121212;
         // content right side
         div {
             article {
+                // skills content
+                .skill-content {
+                    width: 100%;
+                    margin: auto !important;
+                    span {
+                        font-size: .9em;
+                    }
+                }
+
                 // content from contact page
 
                 // map content
