@@ -12,7 +12,7 @@ $color5: #E8E8E6;
 
 // writing animation
 $font-size: 40px;
-$letter-spacing: 0.0625em; //This counts for 1px on 16px font;
+$letter-spacing: 0.001em; //This counts for 1px on 16px font;
 $letter-count: 20; //Number of letters in text !important
 $transition-time: 3s; //Typing speed
 
@@ -109,7 +109,7 @@ body {
         h2 {
             color: $color5;
 
-            position: relative;
+            // position: relative;
             color: $color5;
             text-align: center;
             white-space: nowrap;
