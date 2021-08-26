@@ -2,9 +2,21 @@ $color1-opaque: #004a63f8;
 $color2: #121212;
 
 // Small devices (576px and down)
-// @media (max-width: 576px) { 
-    
-// }
+@media (max-width: 576px) {
+    // work content
+    .work-content {
+        article {
+            // content project
+            .project {
+                width: 100%;
+
+                .project-img {
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+}
 
 // Medium devices (768px and down)
 @media (max-width: 768px) {
@@ -68,21 +80,6 @@ $color2: #121212;
                     iframe {
                         width: 100%;
                     }
-                }
-
-            }
-        }
-    }
-
-    // work content
-    .work-content {
-        article {
-            // content project
-            .project {
-                width: 100%;
-
-                .project-img {
-                    width: 100% !important;
                 }
 
             }
