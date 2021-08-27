@@ -51,6 +51,9 @@
   .right-side div article .skill-content span {
     font-size: 0.9em;
   }
+  .right-side div article .map-content {
+    margin-bottom: 2em;
+  }
   .right-side div article .map-content iframe {
     width: 100%;
   }
