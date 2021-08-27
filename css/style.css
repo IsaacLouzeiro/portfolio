@@ -382,4 +382,12 @@ body {
   background-color: #30B8B2;
 }
 
+footer {
+  margin-left: 70px;
+  background-color: #FF7A4F;
+  color: #121212;
+  text-align: center;
+  padding: 0.5em 0;
+}
+
 /*# sourceMappingURL=style.css.map */
