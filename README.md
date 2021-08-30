@@ -1,2 +1,2 @@
 # portfolio
-Portfolio para mostrar minhas habilidades e projetos como Desenvolvedor Front-end. // Portfolio to show my habilities and projects as Front-end Developer.
+Meu portifolio web, com o objetivo de divulgar meu trabalho como Desenvolvedor Front-end. // My website portfolio, for the purpose of promote my work as a Front-end Developer.
