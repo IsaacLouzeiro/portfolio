@@ -16,7 +16,7 @@ html, body {
 }
 
 body {
-  background-image: url(../img/bg.png);
+  background-image: url(../img/bg.webp);
   background-attachment: fixed;
 }
 
@@ -335,28 +335,28 @@ body {
   background-repeat: no-repeat;
 }
 .work-content article .project .top-block .project1-img {
-  background-image: url(../img/img1.png);
+  background-image: url(../img/img1.webp);
 }
 .work-content article .project .top-block .project2-img {
-  background-image: url(../img/img2.png);
+  background-image: url(../img/img2.webp);
 }
 .work-content article .project .top-block .project3-img {
-  background-image: url(../img/img3.png);
+  background-image: url(../img/img3.webp);
 }
 .work-content article .project .top-block .project4-img {
-  background-image: url(../img/img4.png);
+  background-image: url(../img/img4.webp);
 }
 .work-content article .project .top-block .project5-img {
-  background-image: url(../img/img5.png);
+  background-image: url(../img/img5.webp);
 }
 .work-content article .project .top-block .project6-img {
-  background-image: url(../img/img6.png);
+  background-image: url(../img/img6.webp);
 }
 .work-content article .project .top-block .project7-img {
-  background-image: url(../img/img7.png);
+  background-image: url(../img/img7.webp);
 }
 .work-content article .project .top-block .project8-img {
-  background-image: url(../img/img8.png);
+  background-image: url(../img/img8.webp);
 }
 .work-content article .project .bottom-block {
   background-color: #121212;
