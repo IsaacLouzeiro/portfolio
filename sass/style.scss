@@ -28,7 +28,7 @@ padding: 0;
 }
 
 // background image
-$bg: url(../img/bg.png);
+$bg: url(../img/bg.webp);
 
 // universal
 * { margin: 0; padding: 0; font-family: $main-font; }
@@ -360,14 +360,14 @@ body {
 
                 // adding img projects
                 
-                .project1-img { background-image: url(../img/img1.png); }// 1th project
-                .project2-img { background-image: url(../img/img2.png); }// 2th project
-                .project3-img { background-image: url(../img/img3.png); }// 3th project
-                .project4-img { background-image: url(../img/img4.png); }// 4th project
-                .project5-img { background-image: url(../img/img5.png); }// 5th project
-                .project6-img { background-image: url(../img/img6.png); }// 6th project
-                .project7-img { background-image: url(../img/img7.png); }// 7th project
-                .project8-img { background-image: url(../img/img8.png); }// 8th project
+                .project1-img { background-image: url(../img/img1.webp); }// 1th project
+                .project2-img { background-image: url(../img/img2.webp); }// 2th project
+                .project3-img { background-image: url(../img/img3.webp); }// 3th project
+                .project4-img { background-image: url(../img/img4.webp); }// 4th project
+                .project5-img { background-image: url(../img/img5.webp); }// 5th project
+                .project6-img { background-image: url(../img/img6.webp); }// 6th project
+                .project7-img { background-image: url(../img/img7.webp); }// 7th project
+                .project8-img { background-image: url(../img/img8.webp); }// 8th project
                 
             }
 
