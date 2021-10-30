@@ -5,6 +5,10 @@
   .work-content article .project .project-img {
     width: 100% !important;
   }
+
+  #section-contact {
+    height: 105%;
+  }
 }
 @media (max-width: 768px) {
   #section-home,
