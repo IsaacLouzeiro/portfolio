@@ -317,10 +317,10 @@ body {
 
 // work content
 .work-content {
-    width: 100%;
+    // width: 100%;
     min-height: 100%;
     margin-left: 70px;
-    background-color: $color1-opaque;
+    // background-color: $color1-opaque;
     color: $color5;
     display: flex;
     flex-wrap: wrap;
@@ -403,6 +403,18 @@ body {
     .btn-see-more:hover {
         background-color: $color3;
     }
+}
+
+.left-side-work {
+    background-color: $color1-opaque;
+    width: 65%;
+    margin-left: 70px;
+}
+
+.right-side-work {
+    background-color: $color1;
+    border-left: 5px dashed $color2;
+    width: 35%;
 }
 
 // footer content

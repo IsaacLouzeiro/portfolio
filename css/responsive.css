@@ -17,6 +17,10 @@
     flex-wrap: wrap;
   }
 
+  .right-side-work {
+    border: none !important;
+  }
+
   #section-contact .left-side {
     background-color: #121212;
   }

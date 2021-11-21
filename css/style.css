@@ -299,10 +299,8 @@ body {
 }
 
 .work-content {
-  width: 100%;
   min-height: 100%;
   margin-left: 70px;
-  background-color: #004a63f8;
   color: #E8E8E6;
   display: flex;
   flex-wrap: wrap;
@@ -380,6 +378,18 @@ body {
 }
 .work-content .btn-see-more:hover {
   background-color: #30B8B2;
+}
+
+.left-side-work {
+  background-color: #004a63f8;
+  width: 65%;
+  margin-left: 70px;
+}
+
+.right-side-work {
+  background-color: #004B63;
+  border-left: 5px dashed #121212;
+  width: 35%;
 }
 
 footer {
