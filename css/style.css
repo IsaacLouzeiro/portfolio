@@ -16,8 +16,13 @@ html, body {
 }
 
 body {
+  max-width: 1440px;
   background-image: url(../img/bg.webp);
   background-attachment: fixed;
+  background-size: 1300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #004a63f8 !important;
 }
 
 #general-content {
