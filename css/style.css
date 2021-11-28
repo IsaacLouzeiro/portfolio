@@ -25,6 +25,17 @@ body {
   background-color: #004a63f8 !important;
 }
 
+.lang-select,
+.lang-dropdown {
+  background-color: #30B8B2 !important;
+  color: #004B63 !important;
+}
+
+.lang-dropdown .active {
+  background-color: #004B63 !important;
+  color: #E8E8E6 !important;
+}
+
 #general-content {
   height: 100%;
   display: flex;

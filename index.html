@@ -92,20 +92,20 @@
                     <div class="left-side">
                         <article>
                             <h1 class="position-absolute" style="opacity: 0;">Isaac Louzeiro Front-end Developer</h1>
-                            <h2 data-aos="zoom-in-right">Welcome to my website.</h2>
+                            <h2 id="Welcome" data-aos="zoom-in-right">Welcome to my website.</h2>
                             <p class="ms-2"
                             data-aos="zoom-in-right"
                             data-aos-easing="ease-out-cubic"
-                            data-aos-duration="400">Recently my passion is creating websites. I'm very curious and constantly searching for new things to learn.</p>
+                            data-aos-duration="400" id="WhatIDo">Recently my passion is creating websites. I'm very curious and constantly searching for new things to learn.</p>
                         
                             <!-- buttons box -->
                             <div class="btn-nav" 
                             data-aos="zoom-in-right"
                             data-aos-easing="ease-out-cubic"
                             data-aos-duration="600">
-                                <a href="#section-about" class="btn btn-outline ml-0">Who I'am?</a>
-                                <a href="#section-work" class="btn btn-outline">Projects</a>
-                                <a href="#section-contact" class="btn btn-outline">Contact</a>
+                                <a href="#section-about" class="btn btn-outline ml-0" id="btnOne">Who I'am?</a>
+                                <a href="#section-work" class="btn btn-outline" id="btnTwo">Projects</a>
+                                <a href="#section-contact" class="btn btn-outline" id="btnThree">Contact</a>
                             </div>
                             <!-- // buttons box -->
                         </article>
@@ -114,6 +114,19 @@
 
                     <!-- right side content -->
                     <div class="right-side">
+                        <!-- language select -->
+                        <div class="dropdown fixed-top text-end me-3 mt-3">
+                            <button class="lang-select btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                              <i class="fas fa-globe-americas"></i> Language
+                            </button>
+                            <ul class="lang-dropdown dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                              <li><a id="btEn" class="dropdown-item" href="#" onclick="langBtn(this, 'en')"><i class="fas fa-language"></i> English</a></li>
+                              <li><a id="btPt" class="dropdown-item" href="#" onclick="langBtn(this, 'pt')"><i class="fas fa-language"></i> Português</a></li>
+                            </ul>
+                          </div>
+                        <!-- // language select -->
+                        <!-- // language select -->
+
                         <div>
                             <img src="img/my-photo.webp" alt="my photo" 
                             data-aos="zoom-in"
@@ -132,7 +145,7 @@
     
                                 <p data-aos="zoom-in"
                                 data-aos-easing="ease-out-cubic"
-                                data-aos-duration="800">Jr Front-end Developer</p>
+                                data-aos-duration="800" id="profission">Jr Front-end Developer</p>
                             </article>
     
                             <!-- social network -->
@@ -158,9 +171,9 @@
                     <div class="left-side">
                         <article>
 
-                            <h3 data-aos="zoom-in">About me</h3>
+                            <h3 data-aos="zoom-in" id="aboutMe">About me</h3>
                             
-                            <p class="about-text" data-aos="zoom-in">
+                            <p id="aboutText1" class="about-text" data-aos="zoom-in">
                                 I started the Systems Development course at ETEC 
                                 Professor Basilides de Godoy in 2019, and finished it in 2020. 
                                 I did my final paper project in a PetShop system in Asp.Net MVC, 
@@ -168,7 +181,7 @@
                                 JavaScript and Bootstrap, and in the backend in Asp.Net MVC. 
                             </p>
 
-                            <p class="about-text" data-aos="zoom-in">
+                            <p id="aboutText2" class="about-text" data-aos="zoom-in">
                                 I joined Instituto Proa in 2021, in the ProProfissão 4.0 course 
                                 on Java Web programming, and I feel that I have learned a lot 
                                 in the communicative and technical work part, in addition to it, 
@@ -177,7 +190,7 @@
                                 mainly on the front-end system with HTML, CSS and JavaScript. 
                             </p>
 
-                            <p class="about-text" data-aos="zoom-in">
+                            <p id="aboutText3" class="about-text" data-aos="zoom-in">
                                 I am a very curious person, who likes to learn and expand my 
                                 knowledge. Every day I try to improve my skills so that I can 
                                 grow professionally. 
@@ -190,7 +203,7 @@
                     <div class="right-side">
                         <div>
                             <article>
-                                <h3 data-aos="zoom-in">Skill</h3>
+                                <h3 data-aos="zoom-in" id="skill">Skill</h3>
 
                                 <!-- skill content -->
                                 <div class="skill-content d-flex flex-wrap justify-content-evenly">
@@ -201,6 +214,7 @@
                                     <span data-aos="zoom-in">Scrum</span>
                                     <span data-aos="zoom-in">Adobe XD</span>
                                     <span data-aos="zoom-in">Photoshop</span>
+                                    <span data-aos="zoom-in">Git</span>
                                     <span data-aos="zoom-in">Github</span>
                                 </div>
                                 <!-- // skill content -->
@@ -218,7 +232,7 @@
                     <!-- work content -->
                     <div class="work-content py-3 position-relative" style="z-index: 1;">
 
-                        <h3 class="w-100 text-center" data-aos="zoom-in">My work</h3>
+                        <h3 class="w-100 text-center" data-aos="zoom-in" id="myWork">My work</h3>
 
                         <!-- content portfolio -->
                         <article>
@@ -232,9 +246,9 @@
 
                                 <!-- bottom block -->
                                 <div class="bottom-block">
-                                    <span>Alivisual producer</span>
+                                    <span id="subtProj1">Alivisual producer</span>
 
-                                    <a href="https://www.alivisual.com.br/" class="about-project" target="_blank"><i class="fa fa-window-maximize"></i> Website</a>
+                                    <a id="abtProj1" href="https://www.alivisual.com.br/" class="about-project" target="_blank"><i class="fa fa-window-maximize"></i> Website</a>
                                 </div>
                                 <!-- // bottom block -->
                             </div>
@@ -250,9 +264,9 @@
 
                                 <!-- bottom block -->
                                 <div class="bottom-block">
-                                    <span>Photography portfolio</span>
+                                    <span id="subtProj2">Photography portfolio</span>
 
-                                    <a href="https://www.leandrolouzeiro.com.br/" class="about-project" target="_blank"><i class="fa fa-window-maximize"></i> Website</a>
+                                    <a id="abtProj2" href="https://www.leandrolouzeiro.com.br/" class="about-project" target="_blank"><i class="fa fa-window-maximize"></i> Website</a>
                                 </div>
                                 <!-- // bottom block -->
 
@@ -269,9 +283,9 @@
 
                                 <!-- bottom block -->
                                 <div class="bottom-block">
-                                    <span>Instagram Feed API</span>
+                                    <span id="subtProj3">Instagram Feed API</span>
 
-                                    <a href="https://github.com/IsaacLouzeiro/apiinstagram" class="about-project" target="_blank"><i class="fa fa-github"></i> About</a>
+                                    <a id="abtProj3" href="https://github.com/IsaacLouzeiro/apiinstagram" class="about-project" target="_blank"><i class="fa fa-github"></i> About</a>
                                 </div>
                                 <!-- // bottom block -->
                             </div>
@@ -287,9 +301,9 @@
 
                                 <!-- bottom block -->
                                 <div class="bottom-block">
-                                    <span>Finans website</span>
+                                    <span id="subtProj4">Finans website</span>
 
-                                    <a href="https://github.com/IsaacLouzeiro/finans" class="about-project" target="_blank"><i class="fa fa-github"></i> About</a>
+                                    <a id="abtProj4" href="https://github.com/IsaacLouzeiro/finans" class="about-project" target="_blank"><i class="fa fa-github"></i> About</a>
                                 </div>
                                 <!-- // bottom block -->
 
@@ -306,9 +320,9 @@
 
                                 <!-- bottom block -->
                                 <div class="bottom-block">
-                                    <span>Institutional Pet Shop</span>
+                                    <span id="subtProj5">Institutional Pet Shop</span>
 
-                                    <a href="https://github.com/IsaacLouzeiro/petshop-institucional" class="about-project" target="_blank"><i class="fa fa-github"></i> About</a>
+                                    <a id="abtProj5" href="https://github.com/IsaacLouzeiro/petshop-institucional" class="about-project" target="_blank"><i class="fa fa-github"></i> About</a>
                                 </div>
                                 <!-- // bottom block -->
                             </div>
@@ -324,9 +338,9 @@
 
                                 <!-- bottom block -->
                                 <div class="bottom-block">
-                                    <span>Museum of Modern Art</span>
+                                    <span id="subtProj6">Museum of Modern Art</span>
 
-                                    <a href="https://github.com/IsaacLouzeiro/Museu-de-Arte-Moderna" class="about-project" target="_blank"><i class="fa fa-github"></i> About</a>
+                                    <a id="abtProj6" href="https://github.com/IsaacLouzeiro/Museu-de-Arte-Moderna" class="about-project" target="_blank"><i class="fa fa-github"></i> About</a>
                                 </div>
                                 <!-- // bottom block -->
                             </div>
@@ -342,9 +356,9 @@
 
                                 <!-- bottom block -->
                                 <div class="bottom-block">
-                                    <span>City news</span>
+                                    <span id="subtProj7">City news</span>
 
-                                    <a href="https://github.com/IsaacLouzeiro/noticias-da-cidade" class="about-project" target="_blank"><i class="fa fa-github"></i> About</a>
+                                    <a id="abtProj7" href="https://github.com/IsaacLouzeiro/noticias-da-cidade" class="about-project" target="_blank"><i class="fa fa-github"></i> About</a>
                                 </div>
                                 <!-- // bottom block -->
                             </div>
@@ -360,9 +374,9 @@
 
                                 <!-- bottom block -->
                                 <div class="bottom-block">
-                                    <span>Institutional website</span>
+                                    <span id="subtProj8">Institutional website</span>
 
-                                    <a href="https://github.com/IsaacLouzeiro/Site-institucional" class="about-project" target="_blank"><i class="fa fa-github"></i> About</a>
+                                    <a id="abtProj8" href="https://github.com/IsaacLouzeiro/Site-institucional" class="about-project" target="_blank"><i class="fa fa-github"></i> About</a>
                                 </div>
                                 <!-- // bottom block -->
                             </div>
@@ -372,7 +386,7 @@
                         <!-- // content portfolio -->
 
                         <!-- button see more -->
-                        <a class="btn-see-more my-3" href="https://github.com/IsaacLouzeiro" target="_blank"><i class="fa fa-github"></i> See more</a>
+                        <a id="btnSeeMore" class="btn-see-more my-3" href="https://github.com/IsaacLouzeiro" target="_blank"><i class="fa fa-github"></i> See more</a>
 
                     </div>
                     <!-- // work content -->
@@ -399,9 +413,9 @@
                     <div class="left-side">
                         <article>
 
-                            <h3 class="w-100 text-center contact-title" data-aos="zoom-in">Contact</h3>
+                            <h3 class="w-100 text-center contact-title" data-aos="zoom-in" id="TitleContact">Contact</h3>
 
-                            <p class="contact-subtitle text-center" data-aos="zoom-in-up">If you are interested in my work or need additional information, please, reach me out.</p>
+                            <p class="contact-subtitle text-center" data-aos="zoom-in-up" id="subContact">If you are interested in my work or need additional information, please, reach me out.</p>
                             
                             <!-- contact-me -->
                             <div class="contact-me">

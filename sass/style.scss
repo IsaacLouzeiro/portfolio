@@ -46,6 +46,17 @@ body {
 
 }
 
+// select language
+.lang-select,
+.lang-dropdown {
+    background-color: $color3!important;
+    color: $color1!important;
+}
+.lang-dropdown .active {
+    background-color: $color1!important;
+    color: $color5!important;
+}
+
 // general content div
 #general-content {
     height: 100%;
