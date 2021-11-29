@@ -66,15 +66,18 @@ const memLangPt = localStorage.getItem('pt');
 
 const memLangEn = localStorage.getItem('en');
 
+document.getElementById("btEn").classList.add("active");
 // if has the lang pt on localStorage
 if (memLangPt) {
     document.getElementById("btPt").classList.add("active");
+    document.getElementById("btEn").classList.remove("active");
     languageWebsite();
 }
 
 // if has the lang en on localStorage
 if (memLangEn) {
     document.getElementById("btEn").classList.add("active");
+    document.getElementById("btPt").classList.remove("active");
 }
 
 
