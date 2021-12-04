@@ -62,7 +62,7 @@
   .right-side div article .map-content {
     margin-bottom: 2em;
   }
-  .right-side div article .map-content iframe {
+  .right-side div article .map-content .lclMap {
     width: 100%;
   }
 }

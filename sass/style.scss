@@ -308,10 +308,19 @@ body {
             // map content
             .map-content {
                 margin-top: 1em;
-                iframe {
+                width: 100vw;
+                max-width: 265px;
+                padding: 5px;
+                .lclMap {
+                    background-image: url(../img/map.webp);
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
                     border-radius: 10px;
+                    width: 100%;
                     max-width: 260px;
                     height: 180px;
+                    border: 1px solid;
                 }
             }
 
