@@ -355,6 +355,11 @@ body {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.work-content article .project .top-block .project-img:hover {
+  opacity: 0.9;
 }
 .work-content article .project .top-block .project1-img {
   background-image: url(../img/img1.webp);
@@ -402,6 +407,68 @@ body {
 }
 .work-content .btn-see-more:hover {
   background-color: #30B8B2;
+}
+
+.modal .modal-content {
+  background-color: #004B63;
+  color: #E8E8E6;
+}
+.modal .modal-content .modal-header {
+  border-color: #FF7A4F;
+}
+.modal .modal-content .modal-header .btn-close {
+  background-color: #FF7A4F;
+  opacity: 0.8;
+  transition: all 0.3s;
+}
+.modal .modal-content .modal-header .btn-close:hover {
+  opacity: 1;
+}
+.modal .modal-content .modal-body {
+  background-color: #004B63;
+}
+.modal .modal-content .modal-body .project-img {
+  width: 22em;
+  height: 12em;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: auto;
+}
+.modal .modal-content .modal-body .project1-img {
+  background-image: url(../img/img1.webp);
+}
+.modal .modal-content .modal-body .project2-img {
+  background-image: url(../img/img2.webp);
+}
+.modal .modal-content .modal-body .project3-img {
+  background-image: url(../img/img3.webp);
+}
+.modal .modal-content .modal-body .project4-img {
+  background-image: url(../img/img4.webp);
+}
+.modal .modal-content .modal-body .project5-img {
+  background-image: url(../img/img5.webp);
+}
+.modal .modal-content .modal-body .project6-img {
+  background-image: url(../img/img6.webp);
+}
+.modal .modal-content .modal-body .project7-img {
+  background-image: url(../img/img7.webp);
+}
+.modal .modal-content .modal-body .project8-img {
+  background-image: url(../img/img8.webp);
+}
+.modal .modal-content .modal-footer {
+  border-color: #FF7A4F;
+}
+.modal .modal-content .modal-footer .btn {
+  background-color: #FF7A4F;
+  border: none;
+  transition: all 0.3s;
+}
+.modal .modal-content .modal-footer .btn:hover {
+  opacity: 0.8;
 }
 
 .left-side-work {

@@ -381,6 +381,12 @@ body {
                     background-position: center;
                     background-size: contain;
                     background-repeat: no-repeat;
+                    cursor: pointer;
+                    transition: all .2s;
+
+                    &:hover {
+                        opacity: .9;
+                    }
                 }
 
                 // adding img projects
@@ -427,6 +433,63 @@ body {
 
     .btn-see-more:hover {
         background-color: $color3;
+    }
+}
+
+// modal
+.modal {
+    .modal-content {
+        background-color: $color1;
+        color: $color5;
+
+        .modal-header {
+            border-color: $color4;
+            .btn-close {
+                background-color: $color4;
+                opacity: .8;
+                transition: all .3s;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+
+        
+        .modal-body {
+            background-color: $color1;
+            .project-img {
+                width: 22em;
+                height: 12em;
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                margin: auto;
+            }
+            // adding img projects
+            .project1-img { background-image: url(../img/img1.webp); }// 1th project
+            .project2-img { background-image: url(../img/img2.webp); }// 2th project
+            .project3-img { background-image: url(../img/img3.webp); }// 3th project
+            .project4-img { background-image: url(../img/img4.webp); }// 4th project
+            .project5-img { background-image: url(../img/img5.webp); }// 5th project
+            .project6-img { background-image: url(../img/img6.webp); }// 6th project
+            .project7-img { background-image: url(../img/img7.webp); }// 7th project
+            .project8-img { background-image: url(../img/img8.webp); }// 8th project
+        }
+
+        .modal-footer {
+            border-color: $color4;
+
+            .btn {
+                background-color: $color4;
+                border: none;
+                transition: all .3s;
+
+                &:hover {
+                    opacity: .8;
+                }
+            }
+        }
     }
 }
 
