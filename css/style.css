@@ -489,8 +489,9 @@ body {
 .modal .modal-content .modal-footer .btn:hover {
   opacity: 0.8;
 }
-.modal .modal-content .modal-footer .website-link button {
+.modal .modal-content .modal-footer .website-link {
   background-color: #121212;
+  color: #E8E8E6;
 }
 
 .left-side-work {

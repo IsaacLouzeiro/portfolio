@@ -13,7 +13,7 @@ function languageWebsite() {
     document.getElementById("btnOne").textContent = "Quem sou eu?";
     document.getElementById("btnTwo").textContent = "Projetos";
     document.getElementById("btnThree").textContent = "Contato";
-    // profission
+    // career
     document.getElementById("profission").textContent = "Desenvolvedor Front-end";
 
     // ABOUT ME
@@ -29,6 +29,8 @@ function languageWebsite() {
     // MY WORK
     // title
     document.getElementById("myWork").textContent = "Meus trabalhos";
+    // subtitle
+    document.getElementById("myWorkSubtitle").textContent = "Clique no projeto para ver mais sobre ele";
     // button see more
     document.getElementById("btnSeeMore").textContent = "Veja mais";
     // title projects
@@ -41,15 +43,59 @@ function languageWebsite() {
     document.getElementById("subtProj7").textContent = "Notícias da cidade";
     document.getElementById("subtProj8").textContent = "Site institucional";
     // btn projects
-    document.getElementById("abtProj1").innerHTML = "<i class='fa fa-window-maximize'></i> Site";
-    document.getElementById("abtProj2").innerHTML = "<i class='fa fa-window-maximize'></i> Site";
-    document.getElementById("abtProj3").innerHTML = "<i class='fa fa-github'></i> Sobre";
-    document.getElementById("abtProj4").innerHTML = "<i class='fa fa-github'></i> Sobre";
-    document.getElementById("abtProj5").innerHTML = "<i class='fa fa-github'></i> Sobre";
-    document.getElementById("abtProj6").innerHTML = "<i class='fa fa-github'></i> Sobre";
-    document.getElementById("abtProj7").innerHTML = "<i class='fa fa-github'></i> Sobre";
-    document.getElementById("abtProj8").innerHTML = "<i class='fa fa-github'></i> Sobre";
+    for (let i = 1; i <= 2; i++) {
+        titleModal = "abtProj" + i;
+        document.getElementById(titleModal).innerHTML = "<i class='fa fa-window-maximize'></i> Site";
+    }
+    for (let i = 3; i <= 8; i++) {
+        titleModal = "abtProj" + i;
+        document.getElementById(titleModal).innerHTML = "<i class='fa fa-github'></i> Sobre";
+    }
+    
 
+    // MY WORK MODAL
+    
+    // title project modal
+    staticBackdropLabel1
+    document.getElementById("staticBackdropLabel1").textContent = "Produtora Alivisual";
+    document.getElementById("staticBackdropLabel2").textContent = "Portifolio de fotografia";
+    document.getElementById("staticBackdropLabel3").textContent = "API Instagram Feed";
+    document.getElementById("staticBackdropLabel4").textContent = "Site Finans";
+    document.getElementById("staticBackdropLabel5").textContent = "Petshop institucional";
+    document.getElementById("staticBackdropLabel6").textContent = "Museu de Arte Moderna";
+    document.getElementById("staticBackdropLabel7").textContent = "Notícias da cidade";
+    document.getElementById("staticBackdropLabel8").textContent = "Site institucional";
+
+    // title "about" project modal
+    let titleModalProject = "Sobre:";
+    for (let i = 1; i <= 8; i++) {
+        titleModal = "abtTitleModal" + i;
+        document.getElementById(titleModal).textContent = titleModalProject;
+    }
+
+    // content about project
+    document.getElementById("contProj1").textContent = "O site foi criado para a Alivisual, uma produtora de audiovisual & fotografia de São Paulo.";
+    document.getElementById("contProj2").textContent = "Portfolio de fotografia desenvolvido para o fotógrafo Leandro Louzeiro.";
+    document.getElementById("contProj3").textContent = "Site criado com o intuito de utilizar o Instagram Basic Display API do Facebook Developer para fins de estudos.";
+    document.getElementById("contProj4").textContent = "Site fictício de finança.";
+    document.getElementById("contProj5").textContent = "Site baseado no meu projeto de TCC em Asp.Net, apenas com Html, Css e Bootstrap.";
+    document.getElementById("contProj6").textContent = "Site feito por mim, sobre o Museu de Arte Moderna de São Paulo. Site sem ligações com o museu. ";
+    document.getElementById("contProj7").textContent = "Projeto do site de uma cidade fictícia.";
+    document.getElementById("contProj8").textContent = "Esse site foi todo criado por mim, com a finalidade de apresentar o Trabalho de Conclusão de Módulo na Etec de Desenvolvimento de sistemas 1º Semestre, e adquirir experiência no decorrer desse projeto.";
+
+    // in this project it was used
+    let titleModalSkill = "Nesse projeto foi usado:";
+    for (let i = 1; i <= 8; i++) {
+        titleSkill = "titleSkill" + i;
+        document.getElementById(titleSkill).textContent = titleModalSkill;
+    }
+
+    // buttons modal
+    for (let i = 1; i <= 8; i++) {
+        ws = "ws" + i;
+        document.getElementById(ws).innerHTML = "<i class='fa fa-window-maximize'></i> Site";
+    }
+    
     // CONTACT
     // title
     document.getElementById("TitleContact").textContent = "Contato";
