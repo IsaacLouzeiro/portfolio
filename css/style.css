@@ -459,6 +459,20 @@ body {
 .modal .modal-content .modal-body .project8-img {
   background-image: url(../img/img8.webp);
 }
+.modal .modal-content .modal-body .UsedSkill {
+  font-weight: bold;
+}
+.modal .modal-content .modal-body .UsedSkill .badgeSkill {
+  display: inline-block;
+  background-color: #30B8B2;
+  padding: 3px 10px;
+  border-radius: 5px;
+  cursor: default;
+  transition: all 0.3s;
+}
+.modal .modal-content .modal-body .UsedSkill .badgeSkill:hover {
+  padding: 6px 13px;
+}
 .modal .modal-content .modal-footer {
   border-color: #FF7A4F;
 }
@@ -469,6 +483,9 @@ body {
 }
 .modal .modal-content .modal-footer .btn:hover {
   opacity: 0.8;
+}
+.modal .modal-content .modal-footer .website-link button {
+  background-color: #121212;
 }
 
 .left-side-work {

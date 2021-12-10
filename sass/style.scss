@@ -475,6 +475,25 @@ body {
             .project6-img { background-image: url(../img/img6.webp); }// 6th project
             .project7-img { background-image: url(../img/img7.webp); }// 7th project
             .project8-img { background-image: url(../img/img8.webp); }// 8th project
+
+            // skill badge main
+            .UsedSkill {
+                font-weight: bold;
+
+                // badge
+                .badgeSkill {
+                    display: inline-block;
+                    background-color: $color3;
+                    padding: 3px 10px;
+                    border-radius: 5px;
+                    cursor: default;
+                    transition: all 0.3s;
+
+                    &:hover {
+                        padding: 6px 13px;
+                    }
+                }
+            }
         }
 
         .modal-footer {
@@ -488,6 +507,10 @@ body {
                 &:hover {
                     opacity: .8;
                 }
+            }
+
+            .website-link button {
+                background-color: $color2;
             }
         }
     }
