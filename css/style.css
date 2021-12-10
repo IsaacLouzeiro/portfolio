@@ -331,6 +331,10 @@ body {
   justify-content: center;
   align-items: center;
 }
+.work-content .myWorkSubtitle {
+  font-size: 1.05em;
+  color: #FF7A4F;
+}
 .work-content a {
   transition: all 0.2s;
 }
