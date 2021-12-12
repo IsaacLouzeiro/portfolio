@@ -28,6 +28,17 @@ $color2: #121212;
         }
     }
 
+    // modal
+    .modal {
+        .modal-content {
+            .modal-body {
+                .project-img {
+                    width: 100%!important;
+                }
+            }
+        }
+    }
+
     // map content
     .map-content {
         width: 130%!important;
