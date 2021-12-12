@@ -6,8 +6,10 @@
     width: 100% !important;
   }
 
-  #section-contact {
-    height: 110%;
+  .map-content {
+    width: 130% !important;
+    margin-left: -25px;
+    padding: 0 !important;
   }
 }
 @media (max-width: 768px) {
