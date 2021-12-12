@@ -299,7 +299,7 @@ body {
 }
 .right-side div article .map-content {
   margin-top: 1em;
-  width: 100vw;
+  width: 90vw;
   max-width: 265px;
   padding: 5px;
 }
@@ -309,7 +309,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 10px;
-  width: 70%;
+  width: 100%;
   max-width: 260px;
   height: 180px;
 }
