@@ -3,6 +3,17 @@ $color2: #121212;
 
 // Small devices (576px and down)
 @media (max-width: 576px) {
+    // main content
+    .left-side {
+        article {
+            // writing animation from home page
+            h2 {
+                margin-top: 50px;
+            }
+        }
+    }
+
+    
     // work content
     .work-content {
         article {

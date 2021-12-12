@@ -1,4 +1,8 @@
 @media (max-width: 576px) {
+  .left-side article h2 {
+    margin-top: 50px;
+  }
+
   .work-content article .project {
     width: 100%;
   }
