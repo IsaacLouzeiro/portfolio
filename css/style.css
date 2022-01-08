@@ -278,9 +278,41 @@ body {
 }
 .right-side div article .skill-content span {
   display: inline-block;
-  background-color: #FF7A4F;
   padding: 5px 10px;
   margin: 0.5em;
+}
+.right-side div article .skill-content span img {
+  width: 50px;
+  filter: drop-shadow(1px 1px 5px rgba(149, 229, 255, 0.3));
+}
+.right-side div article .skill-content span img:hover {
+  -moz-transform: spin 1s infinite linear;
+  -webkit-animation: spin 1s infinite linear;
+  transform: spin 1s infinite linear;
+}
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 .right-side div article .about-location {
   display: inline-block;

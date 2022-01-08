@@ -281,9 +281,33 @@ body {
                 
                 span {
                     display: inline-block;
-                    background-color: $color4;
+                    // background-color: $color4;
                     padding: 5px 10px;
                     margin: .5em;
+
+                    img {
+                        width: 50px;
+                        filter: drop-shadow(1px 1px 5px rgba(149, 229, 255, 0.3));
+
+                        &:hover {
+                            @-moz-keyframes spin {
+                                from { -moz-transform: rotate(0deg); }
+                                to { -moz-transform: rotate(360deg); }
+                            }
+                            @-webkit-keyframes spin {
+                                from { -webkit-transform: rotate(0deg); }
+                                to { -webkit-transform: rotate(360deg); }
+                            }
+                            @keyframes spin {
+                                from {transform:rotate(0deg); }
+                                to {transform:rotate(360deg); }
+                            }
+
+                            -moz-transform: spin 1s infinite linear;
+                            -webkit-animation: spin 1s infinite linear;
+                            transform: spin 1s infinite linear;
+                        }
+                    }
                 }
             }
 
