@@ -287,7 +287,7 @@ body {
 
                     img {
                         width: 50px;
-                        filter: drop-shadow(1px 1px 5px rgba(149, 229, 255, 0.3));
+                        filter: drop-shadow(1px 1px 5px rgba(149, 229, 255, 0.5));
 
                         &:hover {
                             @-moz-keyframes spin {

@@ -283,7 +283,7 @@ body {
 }
 .right-side div article .skill-content span img {
   width: 50px;
-  filter: drop-shadow(1px 1px 5px rgba(149, 229, 255, 0.3));
+  filter: drop-shadow(1px 1px 5px rgba(149, 229, 255, 0.5));
 }
 .right-side div article .skill-content span img:hover {
   -moz-transform: spin 1s infinite linear;
