@@ -51,7 +51,6 @@ function languageWebsite() {
         titleModal = "abtProj" + i;
         document.getElementById(titleModal).innerHTML = "<i class='fa fa-github'></i> Sobre";
     }
-    
 
     // MY WORK MODAL
     
@@ -101,9 +100,6 @@ function languageWebsite() {
     document.getElementById("TitleContact").textContent = "Contato";
     // subtitle
     document.getElementById("subContact").textContent = "Se você está interessado no meu trabalho, ou precisa de informações adicionais, por favor, entre em contato.";
-    
-
-
 }
 
 // SETTING BUTTON LANGUAGE
@@ -125,8 +121,6 @@ if (memLangEn) {
     document.getElementById("btEn").classList.add("active");
     document.getElementById("btPt").classList.remove("active");
 }
-
-
 
 function langBtn(btn, lang) {
     location.reload();
