@@ -8,7 +8,7 @@
 
 ### -- About
 
-#### My website portfolio, for the purpose of promote my work as a Front-end Developer.
+#### My website portfolio, for the purpose of promote my work as a Front-end Developer. Version 1.0.
 
 ### -- Technologies
 
@@ -28,7 +28,7 @@
 
 ### -- Sobre
 
-#### Meu portifolio web, com o objetivo de divulgar meu trabalho como Desenvolvedor Front-end. 
+#### Meu portifolio web, com o objetivo de divulgar meu trabalho como Desenvolvedor Front-end. Versão 1.0.
 
 ### -- Tecnologias
 
