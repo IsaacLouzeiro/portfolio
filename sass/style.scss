@@ -88,6 +88,61 @@ body {
     }
 }
 
+// warning modal (old website)
+#warningModal {
+    &.modal {
+        -webkit-backdrop-filter: blur(5px); 
+        backdrop-filter: blur(5px);
+        z-index: 99999;
+
+        .modal-content {
+            // background-color: $color3;
+
+            .modal-header {
+                background-color: $color5;
+                color: $color1;
+                border: none;
+                box-shadow: 0 1px 10px rgba($color2, .2);
+                z-index: 1;
+            }
+
+            .modal-body {
+                background-color: $color5;
+                color: $color1;
+                display: flex;
+
+                #logoIsaac {
+                    width: 50%;
+                    background-image: url(../img/logoIsaac.png);
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
+
+                span {
+                    a {
+                        color: $color2;
+                        text-decoration: none;
+
+                        &:hover {
+                            opacity: .7;
+                        }
+                    }
+                }
+            }
+
+            .modal-footer {
+                background-color: $color5;
+                border: none;
+                box-shadow: 0 1px 10px rgba($color2, .2);
+                z-index: 1;
+                color: $color1;
+            }
+
+        }
+    }
+}
+
 // main content
 .left-side {
     background-color: $color1-opaque;

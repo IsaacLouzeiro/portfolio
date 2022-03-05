@@ -55,7 +55,7 @@
         <!-- End Google Tag Manager (noscript) -->
 
         <!-- warning box -->
-        <div class="alert alert-warning m-0 radius-0 alert-dismissible fixed-bottom d-flex" role="alert" style="z-index: 99999;">
+        <div class="alert alert-warning m-0 radius-0 alert-dismissible fixed-bottom d-flex" role="alert" style="z-index: 99998;">
             <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
             <span class="mx-auto align-self-center"><strong>OLD VERSION!</strong> This is an old version of my Website Portfolio. You can see the new version at <a href="https://isaaclouzeiro.dev.br" class="alert-link">isaaclouzeiro.dev.br</a></span>
         </div>
@@ -91,6 +91,30 @@
             </nav>
             <!-- // main menu -->
 
+            <!-- warning modal (old website) -->
+            <div class="modal fade" id="warningModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Old Version of Portfolio</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div id="logoIsaac"></div>
+
+                            <span>This is an old version of my Website Portfolio. You can see the new version at <a href="https://isaaclouzeiro.dev.br">isaaclouzeiro.dev.br</a></span>
+                        </div>
+                        <div class="modal-footer">
+                            <span class="me-auto">Redirect in <span id="countdown"></span></span>
+                                
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-primary">Go to Website</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- // warning modal (old website) -->
+
             <!-- main content -->
             <main class="w-100">
                 <!-- home -->
@@ -123,7 +147,7 @@
                     <!-- right side content -->
                     <div class="right-side">
                         <!-- language select -->
-                        <div class="dropdown align-self-start position-absolute text-end me-3 mt-3" style="top:0 ; right: 0; z-index: 1000000;">
+                        <div class="dropdown align-self-start position-absolute text-end me-3 mt-3" style="top:0 ; right: 0; z-index: 99997;">
                             <button class="lang-select btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                               <i class="fas fa-globe-americas"></i>
                             </button>
@@ -753,5 +777,37 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+        
+        <!-- showing warning -->
+        <script>
+            var myModalEl = document.getElementById('warningModal');
+            var myModal = new bootstrap.Modal(document.getElementById('warningModal'), {
+                keyboard: false
+            });
+            
+            myModal.show()
+
+            // redirect warning
+            let num = 11;
+            let redirect = setInterval(()=> {
+                if (num == 0) {
+                    num = 0;
+                }else {
+                    num -= 1;
+                }
+
+                if (num === 0) {
+                    location.assign("https://isaaclouzeiro.dev.br")    
+                }
+
+                // console.log(num)
+                document.getElementById('countdown').innerText = num
+
+            }, 1000)
+
+            myModalEl.addEventListener('hidden.bs.modal', function (event) {
+                clearInterval(redirect);
+            })
+        </script>
     </body>
 </html>
