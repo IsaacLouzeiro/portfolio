@@ -1,0 +1,21 @@
+// main font
+$main-font: 'Ubuntu', 'Helvetica', sans-serif;
+
+// Color Theme
+$color1: #004B63;
+$color1-opaque: #004a63f8;
+$color2: #121212;
+$color3: #30B8B2;
+$color4: #FF7A4F;
+$color5: #E8E8E6;
+
+// writing animation
+$font-size: 40px;
+$letter-spacing: 0.001em; //This counts for 1px on 16px font;
+$letter-count: 20; //Number of letters in text !important
+$transition-time: 3s; //Typing speed
+
+$letter-size: calc(1ch + #{$letter-spacing});
+$cursor-width: 1px;
+$cursor-blink-duration: $letter-count;
+$font-width: calc(#{$letter-count}ch + #{$letter-count}*#{$letter-spacing});
